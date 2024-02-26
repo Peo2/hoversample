@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: blue;
+}
+.main{
+    display: block;
+}
+.main ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.main ul li{
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.main ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.main ul li :hover{
+    background: lightblue;
+     
+}
+.drowp-down ul{
+    display: block;
+    position:absolute;
+    background-color: blue;
+    padding-right: 20px;
+}
+.drowp-down{
+    display: none;
+}
+.main ul li :hover .drowp-down{
+    display: block;
+}
